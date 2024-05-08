@@ -1,0 +1,9 @@
+<div>
+  Enter your name:
+  <input type="text" [(ngModel)]="name" id="name" />
+  Price:
+  <input type="number" [(ngModel)]="price" id="price" />
+</div>
+<p [ngStyle]="{background: 'aliceblue'}">Hi {{ name }}</p>
+Pipe: {{price|currency:"USD"}}<br>
+Date: {{date | date}}
